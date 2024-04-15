@@ -8,5 +8,9 @@ public class Test {
         // 测试上传
         String userDir = System.getProperty("user.dir");
         System.out.println(userDir);
+
+        // 测试提交PR
+        String userDir1 = System.getProperty("user.dir");
+        System.out.println(userDir1);
     }
 }
