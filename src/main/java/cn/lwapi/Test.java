@@ -12,5 +12,7 @@ public class Test {
         // 测试提交PR
         String userDir1 = System.getProperty("user.dir");
         System.out.println(userDir1);
+
+        System.out.println("测试测hi是测hi吃黑差事擦");
     }
 }
