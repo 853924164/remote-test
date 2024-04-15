@@ -12,14 +12,5 @@ public class Test {
         // 测试提交PR
         String userDir1 = System.getProperty("user.dir");
         System.out.println(userDir1);
-
-        System.out.println(222);
-        String userDir1 = System.getProperty("user.dir");
-        System.out.println(userDir1);
-
-        String userDir1 = System.getProperty("user.dir");
-        System.out.println(userDir1);
-
-
     }
 }
