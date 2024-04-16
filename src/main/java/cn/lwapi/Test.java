@@ -1,18 +1,37 @@
 package cn.lwapi;
 
+
+import java.util.Random;
+
 public class Test {
 
     public static void main(String[] args) {
-        System.out.println(11111);
 
-        // 测试上传
-        String userDir = System.getProperty("user.dir");
-        System.out.println(userDir);
+        //大小写字母进入数组当中
+        char[] chs = new char[52];
+        for (int i = 0; i < chs.length; i++) {
+            //使用ASCII值 A-Z a-z
+            if (i <= 25){  //a->97
+                chs[i] = (char) (97 + i);
+            } else{ //A->65
+                chs[i] = (char) (65 + i - 26);
+            }
+        }
 
-        // 测试提交PR
-        String userDir1 = System.getProperty("user.dir");
-        System.out.println(userDir1);
+       String result = "";
+        //随机抽取4次
+        Random r = new Random();
+        for (int i = 0; i < 4; i++) {
+            int randomIndex = r.nextInt(chs.length);
+           result =  result + chs[randomIndex];
+        }
 
-        System.out.println("测试测hi是测hi吃黑差事擦");
-    }
+        //添加数字，拼接
+        int muber = r.nextInt(10);
+        result = result + muber;
+
+        //打印 验证码
+         System.out.println(result);
+        }
+
 }
